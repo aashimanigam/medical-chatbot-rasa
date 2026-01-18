@@ -1,0 +1,41 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - how are you
+
+- intent: ask_fever
+  examples: |
+    - i have a fever
+    - i am feeling sick
+    - my body is hot
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - haan
+    - okay
+
+- intent: deny
+  examples: |
+    - no
+    - nahi
+    - not yet
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - take care
+    - see you later
+
+- intent: out_of_scope
+  examples: |
+    - i am just checking you
+    - testing testing
+    - who are you

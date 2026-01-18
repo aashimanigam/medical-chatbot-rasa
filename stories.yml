@@ -1,0 +1,19 @@
+version: "3.1"
+stories:
+- story: fever flow with no medicine
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_fever
+  - action: utter_ask_fever
+  - intent: deny
+  - action: utter_prescribe_rest
+
+- story: fever flow with medicine
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_fever
+  - action: utter_ask_fever
+  - intent: affirm
+  - action: utter_check_medicine

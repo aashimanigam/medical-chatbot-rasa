@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_fever
+  - affirm
+  - deny
+  - goodbye
+  - nlu_fallback  # <-- Ye add karna zaroori hai
+
+responses:
+  utter_greet:
+  - text: "Hello! 😊 I am your AI Health Assistant. How can I help you today?"
+
+  utter_ask_fever:
+  - text: "Oh, sorry to hear that. 🛌 Drink lots of fluids. Have you taken any medicine?"
+
+  utter_prescribe_rest:
+  - text: "Okay, since you haven't taken medicine, please consult a doctor before taking anything. For now, just take rest."
+
+  utter_check_medicine:
+  - text: "Good. Make sure to follow the dosage. Do you feel better now?"
+
+  utter_goodbye:
+  - text: "Take care of yourself! Goodbye! 👋"
+
+  utter_default:
+  - text: "I'm sorry, I didn't quite get that. Could you please rephrase?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
